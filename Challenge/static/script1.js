@@ -169,9 +169,10 @@ document.querySelector('#hit').addEventListener('click',blackjackhit);
 //document.querySelector('#deal').addEventListener('click',blackjackdeal) ;
 
 function blackjackhit(){
-    let cardimg = document.createElement('img');
-    cardimg.src = 'static/images/Q.png';
-    document.querySelector(YOU['div']).appendChild(cardimg);
+    let cardimg = new Image();
+    cardimg.src = "static/images/Q.png"
+    document.getElementById('your-box').appendChild(cardimg);
+    console.log("document yourBox", document.getElementById('your-box'))
 }
 function showcard(){
     
